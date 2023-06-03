@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
+.back {
+  background-image: url("https://zupimages.net/up/23/22/ptoa.png");
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  z-index: -1;
+  filter: brightness(75%);
+}
+
+.thx {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+}
+
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+nav a:nth-child(1) {
+  animation: show 0.2s 1.1s ease 1 both;
+}
+
+nav a:nth-child(2) {
+  animation: show 0.2s 1.2s ease 1 both;
+}
+
+nav a:nth-child(3) {
+  animation: show 0.2s 1.3s ease 1 both;
+}
+
+nav a:nth-child(4) {
+  animation: show 0.2s 1.4s ease 1 both;
+}
+
+nav a:nth-child(5) {
+  animation: show 0.2s 1.5s ease 1 both;
+}
+
+
+h1 {
+  text-align: center;
+  color: rgb(0, 4, 255);
+}
+
+.introduction{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  z-index: 50;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+p{
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.dbtn{
+  
+  position:fixed;
+  top: 45px;
+  left: 1600px;
+  font-size: 3em;
+  height: 40px;
+  width: 120px;
+  border-color: #738ADB;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  font-family: impact;
+  color: rgb(206, 168, 0);
+  background-color: rgba(0, 0, 0, 0.37);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.37);
+  font-size: 2em;
+}
+
+
+
+  .dbtn:hover{
+    background-color: #738adbad;
+    color: white;
+  }
+
+
+
+  img{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    filter: brightness(75%);
+    width: 100px;
+  }
+
+  h2{
+    position: absolute;
+    top: 25px;
+    left: 220px;
+    font-size: 2em;
+    color: white;
+  }
+  
+
