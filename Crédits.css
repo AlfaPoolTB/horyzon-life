@@ -14,3 +14,33 @@
   z-index: -100;
   position: fixed;
 }
+
+
+.dbtn{
+  
+  position:fixed;
+  top: 45px;
+  left: 1600px;
+  font-size: 3em;
+  height: 40px;
+  width: 120px;
+  border-color: #738ADB;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  font-family: impact;
+  color: rgb(206, 168, 0);
+  background-color: rgba(0, 0, 0, 0.37);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.37);
+  font-size: 2em;
+}
+
+
+
+  .dbtn:hover{
+    background-color: #738adbad;
+    color: white;
+  }
